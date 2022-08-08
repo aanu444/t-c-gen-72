@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+
 *,
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
+  padding: 0;
 }
 
 div {
@@ -18,13 +20,13 @@ div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 .policy-container main header {
   -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  flex-basis: 25%;
   background-color: #b2c9ff;
 }
 
@@ -51,13 +53,13 @@ div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 .policy-container main header nav .user-profile .img {
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 .policy-container main header nav .user-profile .img img {
@@ -69,7 +71,7 @@ div {
 
 .policy-container main header nav .user-profile .text {
   -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  flex-basis: 70%;
 }
 
 .policy-container main header nav .user-profile .text .img-text {
@@ -77,6 +79,11 @@ div {
   margin-left: 5px;
   color: #fff;
   font-size: 24px;
+  font-weight: 400;
+}
+
+.policy-container main header nav .nav-click-mb {
+  display: none;
 }
 
 .policy-container main header nav .nav-links {
@@ -85,72 +92,66 @@ div {
 }
 
 .policy-container main header nav .nav-links .nav-links-container {
-  margin-top: 100px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
-.policy-container main header nav .nav-links .nav-links-container .icon,
-.policy-container main header nav .nav-links .nav-links-container .icon-text {
+.policy-container main header nav .nav-links .nav-links-container .active {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.policy-container main header nav .nav-links .nav-links-container .active .icon {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
   height: 60px;
 }
 
-.policy-container main header nav .nav-links .nav-links-container .icon {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
-.policy-container main header nav .nav-links .nav-links-container .icon img {
+.policy-container main header nav .nav-links .nav-links-container .active .icon img {
   width: 24px;
   height: 24px;
   margin-top: 10px;
   margin-left: 60px;
 }
 
-.policy-container main header nav .nav-links .nav-links-container .text {
+.policy-container main header nav .nav-links .nav-links-container .active .text {
   -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  flex-basis: 70%;
 }
 
-.policy-container main header nav .nav-links .nav-links-container .text .icon-text {
+.policy-container main header nav .nav-links .nav-links-container .active .text .icon-text {
   line-height: 2.7;
   text-decoration: none;
   color: #051333;
+  height: 60px;
 }
 
-.policy-container main header nav .nav-links .nav-links-container .active {
+.policy-container main header nav .nav-links .nav-links-container .active:hover {
   background-color: #fff;
   -webkit-box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
 
-.policy-container main header nav .nav-links .nav-links-container .active .icon {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
-.policy-container main header nav .nav-links .nav-links-container .active .text {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+.policy-container main header nav .footer-icons-mb {
+  display: none;
 }
 
 .policy-container main aside {
   -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  flex-basis: 75%;
 }
 
 .policy-container main aside section {
@@ -160,13 +161,13 @@ div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .policy-container main aside section .search-bar {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .policy-container main aside section .search-bar .search-bar-contain {
@@ -176,8 +177,8 @@ div {
   padding: 10px;
   height: 40px;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
 
 .policy-container main aside section .search-bar .search-bar-contain img {
@@ -188,19 +189,20 @@ div {
 
 .policy-container main aside section .policy-text {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .policy-container main aside section .policy-text h1 {
   font-size: 48px;
   color: #3b3b3b;
+  font-weight: 400;
   margin-left: 60px;
   margin-top: 20px;
 }
 
 .policy-container main aside section .policy-subtext {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .policy-container main aside section .policy-subtext .policy-img {
@@ -216,7 +218,7 @@ div {
 
 .policy-container main aside section .tandcgencontain {
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .policy-container main aside section .tandcgencontain .tcgen {
@@ -230,13 +232,13 @@ div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 .policy-container main aside section .tandcgencontain .tcgen .txt-container {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .policy-container main aside section .tandcgencontain .tcgen .txt-container .generator {
@@ -247,9 +249,9 @@ div {
 }
 
 .policy-container main aside section .tandcgencontain .tcgen .txt-container button {
-  border: 2px solid #0000D4;
+  border: 1px solid #0000D4;
   border-radius: 5px;
-  width: 30%;
+  width: 50%;
   padding: 10px;
   display: block;
   margin: 0 auto;
@@ -286,13 +288,13 @@ div {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .policy-container main aside footer .footer {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   margin-top: 100px;
 }
 
@@ -301,4 +303,143 @@ div {
   color: #081f55;
   font-weight: 400;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .policy-container main header {
+    -ms-flex-preferred-size: 20% !important;
+    flex-basis: 20% !important;
+  }
+
+  .policy-container main header nav .logo {
+    display: none;
+  }
+
+  .policy-container main header nav .user-profile {
+    display: none !important;
+  }
+
+  .policy-container main header nav .nav-links .nav-links-container .active .icon {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .policy-container main header nav .nav-links .nav-links-container .active .icon img {
+    margin-left: 0px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .policy-container main header nav .nav-links .nav-links-container .active .text {
+    display: none;
+  }
+
+  .policy-container main header nav .nav-click-mb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+
+  .policy-container main header nav .nav-click-mb .icons {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+
+  .policy-container main header nav .nav-click-mb .icons img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  .policy-container main header nav .footer-icons-mb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-top: 100vh;
+  }
+
+  .policy-container main header nav .footer-icons-mb .icons {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .policy-container main header nav .footer-icons-mb .icons a {
+    display: block;
+    text-align: center;
+  }
+
+  .policy-container main header nav .footer-icons-mb .icons a .user-icon {
+    padding: 10px;
+    width: 70%;
+  }
+
+  .policy-container main header nav .footer-icons-mb .icons a .logout-icon {
+    padding: 10px;
+    border: 1px solid #FFFFAA;
+    background-color: #FFFFAA;
+    border-radius: 8px;
+    width: 60%;
+    -webkit-box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+  }
+
+  .policy-container main aside {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+  }
+
+  .policy-container main aside section .search-bar .search-bar-contain {
+    margin-left: 20px;
+  }
+
+  .policy-container main aside section .policy-text h1 {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .policy-container main aside section .policy-subtext .policy-img {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .policy-container main aside section .policy-subtext .policy-img span {
+    font-weight: 500;
+  }
+
+  .policy-container main aside section .policy-subtext .policy-txt {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  .policy-container main aside section .tandcgencontain {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .policy-container main aside section .tandcgencontain .tcgen {
+    width: 80%;
+    margin-left: 0px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .policy-container main aside section .tandcgencontain .tcgen .txt-container .generator {
+    margin-top: 40px;
+  }
+
+  .policy-container main aside section .tandcgencontain .tcgen .txt-container .icon-add {
+    margin-top: 55%;
+  }
+}
+
 /*# sourceMappingURL=policy.css.map */

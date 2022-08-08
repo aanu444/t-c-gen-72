@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono|Work+Sans:400,700&display=swap" rel="stylesheet">    
    <link rel="stylesheet" href="dashboard.css" />
 	<title>Dashboard-Main</title>
 </head>
 <body>
-	<div class="container">
 		<header class="header">
 			<div class="logo">
 				<div class="logo-img">
@@ -21,39 +21,41 @@
 						<img src="icon/user.svg" id="pic">
 					</div>
 					<div class="name">
-					<h5>Hello Musa</h5>
+						<h5>Hello Musa</h5>
 					</div>
 				</div>
 			</div>
-			<div class="dashboard-elements">
+			<div class="sidebar">
 				<div class="dashboard-items">
-					<img src="icon/policies.png" class="icons">
-				<a href="dashboard.html">Dashboard</a>						
+				<a href="#about"><img src="icon/policies.png" class="icons">Dashboard</a>						
 				
 				</div>
 
 				<div class="dashboard-items">
-					<img src="icon/clipboard-tick.png" class="icons">
-					<a href="policy.html">Policies</a>
+					
+					<a href="#services"><img src="icon/clipboard-tick.png" class="icons">Policies</a>
 				</div>
 
 				<div class="dashboard-items">
-					<img src="icon/user.svg" class="icons">
-					<a href="profile.html">My Profile</a>
+					
+					<a href="#clients"><img src="icon/user.svg" class="icons">My Profile</a>
 				</div>
 				<div class="dashboard-items">
-					<img src="icon/document-download.svg" class="icons">
-					<a href="download.html">Downloads</a>
+					
+					<a href="#contact"><img src="icon/document-download.svg" class="icons">Downloads</a>
 				</div>
 				<div class="dashboard-items">
-					<img src="icon/save-2.svg" class="icons">
-					<a href="saved.html">Saved</a>
+					
+					<a href="#"><img src="icon/save-2.svg" class="icons">Saved</a>
 				</div>
 
 				<div class="logout">
-					<img src="icon/clipboard-tick.png" class="icons">
-					<a href="#">Log Out</a>
+					
+					<a href=""><img src="icon/arrow-right.png" class="icons">Log Out</a>
 		  		</div>
+				
+		  		
+			
 			</div>
 			
 		</header>
@@ -61,10 +63,11 @@
 		<main>
 			<div class="search">  
 			    <input type="text" class="input" placeholder="Search...">  
-			    <button class="btn">  
-			    <i class="fas fa-search"></i>  
+			    <button class="btn">
+			    <img src="icon/search-normal.png">  
+			      
 			    </button>  
-			 </div>
+			 </div>  
 
 			 <div class="greetings">
 				<h3>We're sure you will have a great time here using TermCreator!</h3>
@@ -111,14 +114,15 @@
 				</div>
 			</div>
 
+			<div class="copyright">
+				<small>Copyright 2022 TermsCreator</small>
+			</div>
+
 	
 
 		</main>
-		
-	</div>
 
 
-
-<script src="dashboard.js"></script>
+	<script src="dashboard.js"></script>
 </body>
 </html>

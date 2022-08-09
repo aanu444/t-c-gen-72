@@ -7,9 +7,20 @@
     background-blend-mode: multiply;
     background-size: cover;
 }   */
+/* *{
+  outline: 1px green solid;
+} */
 .rick{
   background-image: url('../Pictures/Background.png');
   background-size: cover;
   left: 0;
   top: 0;
+  background-position: -32px -28px;
+}
+@media screen and (max-width:768px) {
+
+  .rick{
+    background-color: blue;
+    background-image: none;
+  }
 }

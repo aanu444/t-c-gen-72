@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,20 @@
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <title>About Us</title>
 </head>
-<body>
+
+<body id="body">
+    <div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="">Products</a>
+              <a href="">Resources</a>
+              <a href="">Contact us</a>
+              <a href="">Login</a>
+              <a href="" id="bar-start">Get Started</a>
+            </div>
+        </div>
+    </div>
     <nav id="navbar">
         <div>
             <img src="Logo_White.png" alt="Logo" id="Logo">
@@ -16,12 +30,12 @@
         <div class="nav-links">
             <a href="">Products</a>
             <a href="">Resources</a>
-            <a href="">Pricing</a>
-        </div>
-        <div class="nav-links">
             <a href="">Contact us</a>
             <a href="">Login</a>
-            <a href="" id="start">Start free trial</a>
+            <a href="" id="start">Get Started</a>
+            <p id="bar" onclick="openNav()">
+                <img src="menu_burger.svg" alt="Menu Burger">
+            </p>
         </div>
     </nav>
     <main>
@@ -31,13 +45,19 @@
         </div>
         <section>
             <div class="box box1">
-                <div class="left-box"></div>
+                <div class="left-box">
+                    <img src="Logo-Blue-Yellow.png" alt="Logo">
+                </div>
                 <div class="right-box">
                     <p>
-                        TermsCreator is a platform that was developed by a group of creators who wanted to have a website that will help business to help their clients trust them with their information easily. 
+                        TermsCreator is a platform that was developed by a group of creators who wanted to have a
+                        website that will help business to help their clients trust them with their information easily.
                     </p>
                     <p>
-                        These creators themselves had different irksome ordeals in the past with clients because they did not have a well stated privacy policy, terms and condition. Aside this some privacy policy generator sites did not make it easy for them ecause some of them were not easy to naviagate and they had to fill cumbersome information before they could generate the policies.
+                        These creators themselves had different irksome ordeals in the past with clients because they
+                        did not have a well stated privacy policy, terms and condition. Aside this some privacy policy
+                        generator sites did not make it easy for them ecause some of them were not easy to naviagate and
+                        they had to fill cumbersome information before they could generate the policies.
                     </p>
                 </div>
             </div>
@@ -48,7 +68,9 @@
                 <div class="right-box">
                     <h3>WHAT WE DO</h3>
                     <p>
-                        We help to make data compliance and data security for businesses in Nigeria user-friendly. We provide solution for legal policies. We create customized Privacy Policies, Terms  and condition,Terms of Use to keep your business safe from legal issues.
+                        We help to make data compliance and data security for businesses in Nigeria user-friendly. We
+                        provide solution for legal policies. We create customized Privacy Policies, Terms and
+                        condition, Terms of Use to keep your business safe from legal issues.
                     </p>
                 </div>
             </div>
@@ -59,11 +81,12 @@
                 <div class="right-box">
                     <h3>HOW WE DO IT</h3>
                     <p>
-                        We do not give pre-made policies . Every policy are custom made using the details you will provide for us. This makes your T &C personalized for you to protect your business.
+                        We do not give pre-made policies. Every policy are custom made using the details you will
+                        provide for us. This makes your T & C personalized for you to protect your business.
                     </p>
                 </div>
             </div>
-            <div class=" box box4">
+            <div class="box box4">
                 <div id="trusted">
                     <h2>Trusted by Thousands</h2>
                 </div>
@@ -110,5 +133,7 @@
             <a href="">Security FAQ</a>
         </div>
     </footer>
+    <script src="about-us.js"></script>
 </body>
+
 </html>

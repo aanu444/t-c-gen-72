@@ -24,7 +24,7 @@ body{
     width: 272.37px;
     height: 41.2px;
     position: absolute;
-    left: 122px;
+    left: 52px;
     top: 74px;
 }
 .main-ctn{
@@ -40,7 +40,7 @@ body{
 #user-profile span img{
     width: 56px;
     height: 56px;
-    margin-left: 122px;
+    margin-left: 50px;
     margin-top: 25px;
     margin-right: 4px;
     background: #B2C9FF;
@@ -124,6 +124,7 @@ a span{
     padding: 10px 65px;
     border: 2px solid #154ED4;
     background-color: #FFFFFF;
+    color: #154ED4;
     border-radius:5px;
 }
 .content{
@@ -226,6 +227,7 @@ input[type=text] {
     padding: 10px 65px;
     border: 2px solid #154ED4;
     background-color: #FFFFFF;
+    color: #154ED4;
     border-radius:5px;
   }
   .for-btn{
@@ -238,7 +240,8 @@ input[type=text] {
   .potter{
     background-color: #154ED4;
     color: #fff;
-    padding: 10px 120px;
+    padding: 10px 80px;
+    margin-left: 35px;
     border: 2px solid #154ED4;
     border-radius:5px;
   }
